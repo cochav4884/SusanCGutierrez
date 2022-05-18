@@ -4,15 +4,14 @@ body {
 }
 
 .girls {
-    background: rgb(51, 47, 47);
-    /* background: rgb(74, 71, 75);
-    background: linear-gradient(90deg, rgba(74, 71, 75, 1) 0%, rgba(78, 26, 31, 1) 50%, rgba(125, 123, 131, 1) 100%); */
+    /* background: rgb(51, 47, 47); */
+    background: rgb(74, 71, 75);
+    background: linear-gradient(90deg, rgba(74, 71, 75, 1) 0%, rgba(78, 26, 31, 1) 50%, rgba(125, 123, 131, 1) 100%);
 }
 
 /* header + nav */
 header {
     background-color: transparent;
-
 }
 
 h1 {
@@ -48,20 +47,24 @@ ul li a {
 }
 
 /* section */
+section {
+    text-align: center;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
     border: 10px solid rgb(59, 8, 8);
-
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background-color: rgb(59, 8, 8);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border: 10px solid rgb(59, 8, 8);
 }
 
 .dropdown:hover .dropdown-content {
@@ -86,10 +89,16 @@ ul li a {
 }
 
 /* girls */
+
+.hero {
+    text-align: center;
+}
+
 h2 {
     color: rgb(0, 0, 0);
     text-shadow: 3px 3px rgb(59, 8, 8);
     font-size: 32px;
+    text-align: center;
 }
 
 p {
