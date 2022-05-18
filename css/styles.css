@@ -43,6 +43,7 @@ ul li a {
 /* section */
 section {
     text-align: center;
+    margin: 50px;
 }
 
 .dropdown {
@@ -85,14 +86,14 @@ section {
 /* girls */
 .container {
     margin: auto;
-    width: 1000px;
+    height: 1000px;
     padding: 15px;
     text-align: center;
 }
 
 article {
     display: inline-block;
-   
+
 }
 
 button {
