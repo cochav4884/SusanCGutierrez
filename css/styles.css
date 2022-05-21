@@ -95,14 +95,15 @@ article {
     display: inline-block;
 }
 
-button {
-    background-color: rgb(0, 255, 255);
-    margin: 40px;
-}
+/* button {
+    height: 80px;
+    width: 55px;
+    border: 2px solid rgb(59, 8, 8);
+} */
 
-button:hover {
+/* button:hover {
     background-color: rgba(74, 71, 75, 1);
-}
+} */
 
 .hero {
     height: 800px;
