@@ -112,10 +112,10 @@ button {
     background-color: rgb(59, 8, 8);
 }
 
-/* img {
-    width: 100%;
+.carousel-slide {
+    width: 800px;
     height: auto;
-} */
+}
 
 .small-pic {
     height: 80px;
