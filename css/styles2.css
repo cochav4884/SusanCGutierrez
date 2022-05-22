@@ -18,6 +18,20 @@ body {
     overflow: hidden;
 }
 
+header {
+    background-color: transparent;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px rgb(59, 8, 8);
+    text-align: center;
+    font-size: 600%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 40px;
+}
+
+
 .navbar {
     width: 100%;
     display: flex;
@@ -58,37 +72,37 @@ nav ul li a:hover {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: rgb(51, 51, 51);
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(221, 221, 221);
     color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
     background-color: rgb(255, 0, 0);
-    color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+    color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
     display: none;
-  }
+}
 
 .row {
     display: flex;
@@ -105,6 +119,7 @@ nav ul li a:hover {
 
 .col-1 h2 {
     font-size: 54px;
+    color: rgb(0, 0, 0);
 }
 
 .col-1 h3 {
@@ -123,6 +138,7 @@ nav ul li a:hover {
 .col-1 h4 {
     margin: 30px 0;
     font-size: 20px;
+    color: rgb(0, 0, 0);
 }
 
 button {
@@ -154,6 +170,18 @@ button:hover {
     justify-content: space-between;
 }
 
+.cart {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.cart:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
 .col-1::after {
     content: '';
     width: 10px;
@@ -167,7 +195,7 @@ button:hover {
 
 .col-2 {
     position: relative;
-    flex-basis: 60%;
+    flex-basis: 54%;
     display: flex;
     align-items: center;
 }
@@ -189,11 +217,10 @@ button:hover {
     transform: translateX(150px);
 }
 
-.icons {
-    text-align: center;
-}
-
- .fa-instagram, .fa-snapchat, .fa-burger, .fa-cart-plus {
+.fa-instagram,
+.fa-snapchat,
+.fa-burger,
+.fa-cart-plus {
     height: 13px;
     margin: 20px;
     cursor: pointer;
@@ -202,8 +229,18 @@ button:hover {
 
 footer {
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
+.back {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.back:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
 /* @media screen {
      max-width: 700px;
 }
