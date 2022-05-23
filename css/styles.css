@@ -148,10 +148,11 @@ section {
     text-align: center;
     margin-left: 80px;
     border: 5px solid rgb(59, 8, 8);
+    margin-bottom: 40px;
 }
 
 .hero {
-    text-align: center;
+    margin: auto;
     border: 10px solid rgb(59, 8, 8);
     width: 870px;
 }
