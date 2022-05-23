@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girl One</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/16ef79e6fd.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"
-        defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/16ef79e6fd.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer>
+  </script>
 </head>
 
 <body>
 
   <header>
     <h1>Susan</h1>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="sales.html">SALES</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-      <li><a href="girl1.html">Girl 1</a></li>
-      <li><a href="girl2.html">Girl 2</a></li>
-      <li><a href="girl3.html">Girl 3</a></li>
-      <li><a href="girl4.html">Girl 4</a></li>
-      <li><a href="girl5.html">Girl 5</a></li>
-      <li><a href="fullbody1.html">Full Body 1</a></li>
-      <li><a href="legs1.html">Legs 1</a></li>
-    </ul>
+    <div class="navbar">
+      <img src="img/Girl 1.png" class="logo" height="80px">
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">HOME</a>
+        <a href="girl1.html">Girl 1</a>
+        <a href="girl2.html">Girl 2</a>
+        <a href="girl3.html">Girl 3</a>
+        <a href="girl4.html">Girl 4</a>
+        <a href="girl5.html">Girl 5</a>
+        <a href="legs1.html">Legs 1</a>
+        <a href="fullbody1.html">Full Body 1</a>
+        <a href="sales.html">SALES</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-burger"></i>
+        </a>
+      </div>
   </header>
-
 
   <a name="#top"></a>
   <main>
@@ -356,9 +360,14 @@
   </main>
 
   <footer>
-    <p>&copy; 2022 | SCG</p>
-    <a href="top" class="text-info">Back to Top</a>
-  </footer>
+    <p>&copy; 2022 | SCG
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+    </p>
+    <a class="back" href="top">Back to Top</a>
+</footer>
+
+
 </body>
 
 </html>

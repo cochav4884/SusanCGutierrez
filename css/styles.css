@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 /* body */
 body {
     background: rgb(0, 0, 0) url("../img/Stickers\ 1.jpg") center;
@@ -8,6 +13,16 @@ body {
     /* background: rgb(51, 47, 47); */
     background: rgb(74, 71, 75);
     background: linear-gradient(90deg, rgba(74, 71, 75, 1) 0%, rgba(78, 26, 31, 1) 50%, rgba(125, 123, 131, 1) 100%);
+}
+
+/* container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* header + nav */
@@ -24,33 +39,52 @@ h1 {
     margin-bottom: 40px;
 }
 
-ul {
-    list-style-type: none;
+/* navigation bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
     text-align: center;
-}
-
-ul li {
-    display: inline-block;
-    padding: 15px;
-    box-shadow: 4px 8px 10px rgb(0, 0, 0);
-    border-radius: 50%;
-
-}
-
-ul li a {
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px rgb(59, 8, 8);
-    font-size: 32px;
-    margin: 5px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
 
-ul li a:hover {
-    color: rgb(80, 79, 79);
-    text-shadow: 2px 2px rgb(0, 0, 0);
-    text-decoration: none;
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
 }
 
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
 /* main */
 
 /* section */
@@ -98,19 +132,19 @@ section {
 }
 
 /* girls */
-.container {
+.container-fluid {
     margin: auto;
     padding: 15px;
     text-align: center;
 }
 
-button {
+/* button {
     display: inline-block;
     margin-top: 40px;
     margin-left: 155px;
     border: 5px solid rgb(59, 8, 8);
     background-color: rgb(59, 8, 8);
-}
+} */
 
 .carousel-slide {
     width: 800px;
@@ -140,15 +174,141 @@ p {
     text-align: left;
 }
 
-/* footer */
-footer {
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px rgb(59, 8, 8);
-    font-size: 32px;
-    margin-top: 100px;
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
 }
 
-/* icons */
-.fa-instagram {
-    color: rgb(240, 248, 255);
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2 {
+    font-size: 54px;
+    color: rgb(0, 0, 0);
+}
+
+.col-1 h3 {
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p {
+    font-size: 16px;
+    color: rgb(129, 129, 129);
+    font-weight: 100;
+}
+
+.col-1 h4 {
+    margin: 30px 0;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: rgb(74, 71, 75);
+    background: linear-gradient(90deg, rgba(74, 71, 75, 1) 0%, rgba(78, 26, 31, 1) 50%, rgba(125, 123, 131, 1) 100%);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img {
+    width: 30px;
+    display: none;
+}
+
+button:hover img {
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.cart:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+.col-1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: rgb(74, 71, 75);
+    background: linear-gradient(90deg, rgba(74, 71, 75, 1) 0%, rgba(78, 26, 31, 1) 50%, rgba(125, 123, 131, 1) 100%);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 54%;
+    display: flex;
+    align-items: center;
+}
+
+.girl1 {
+    width: 100%;
+}
+
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(74, 71, 75);
+    background: linear-gradient(90deg, rgba(74, 71, 75, 1) 0%, rgba(78, 26, 31, 1) 50%, rgba(125, 123, 131, 1) 100%);
+    border-radius: 80px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.fa-instagram,
+.fa-snapchat,
+.fa-burger,
+.fa-cart-plus {
+    height: 13px;
+    margin: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+/* footer */
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.back {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.back:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
 }
